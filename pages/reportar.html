@@ -48,8 +48,14 @@
 
       <!-- Perfil usuario -->
       <div class="nav-item user-pill" id="userMenuBtn" data-user-panel hidden>
-        <img src="" class="user-avatar" data-user-avatar>
-        <span data-user-name></span>
+        <div class="avatar-sm" data-user-avatar>U</div>
+        <span data-user-name style="font-size:0.87rem;font-weight:600;max-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></span>
+        <i class="bi bi-caret-down-fill icon-dropdown"></i>
+        <div class="user-dropdown" id="userDropdown" hidden>
+          <a href="./perfil.html" class="dropdown-btn"><i class="bi bi-person-circle"></i> Mi perfil</a>
+          <button id="logoutFromMenu"><i class="bi bi-box-arrow-right"></i> Cerrar sesión</button>
+        </div>
+      </div>
 
         <div class="user-dropdown" id="userDropdown" hidden>
           <button id="goProfile">Mi perfil</button>
