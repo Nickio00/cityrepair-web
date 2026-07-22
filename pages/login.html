@@ -77,6 +77,29 @@
           <a href="#" class="auth-link" id="forgotPassLink">¿Olvidaste tu contraseña?</a>
         </div>
 
+        <!-- MODAL OLVIDÉ CONTRASEÑA -->
+        <div id="modalForgot" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:9999;align-items:center;justify-content:center;">
+          <div style="background:#fff;border-radius:18px;padding:28px;width:min(400px,90vw);box-shadow:0 20px 60px rgba(0,0,0,.2);font-family:'DM Sans',sans-serif;">
+            <div style="text-align:center;margin-bottom:16px;">
+              <div style="font-size:2.5rem;margin-bottom:8px;">🔐</div>
+              <h3 style="margin:0 0 6px;font-size:1.1rem;color:#111827;font-weight:800;">¿Olvidaste tu contraseña?</h3>
+              <p style="margin:0;font-size:0.87rem;color:#6b7280;line-height:1.5;">
+                El sistema no tiene recuperación automática de contraseña.<br>
+                Por favor contactá al administrador de EDET para restablecer tu acceso.
+              </p>
+            </div>
+            <div style="background:#EBF2FB;border-radius:12px;padding:14px;margin-bottom:18px;text-align:center;">
+              <p style="margin:0 0 4px;font-size:0.8rem;color:#6b7280;font-weight:600;">Contacto administrador</p>
+              <p style="margin:0;font-size:0.95rem;color:#003087;font-weight:700;">admin@edet.com.ar</p>
+            </div>
+            <button onclick="document.getElementById('modalForgot').style.display='none'"
+              style="width:100%;height:42px;background:#003087;color:#fff;border:none;border-radius:11px;
+                     font-family:'DM Sans',sans-serif;font-weight:700;font-size:0.95rem;cursor:pointer;">
+              Entendido
+            </button>
+          </div>
+        </div>
+
         <button type="submit" class="auth-btn" id="btnLogin">
           <span>Iniciar Sesión</span>
           <i class="bi bi-arrow-right"></i>

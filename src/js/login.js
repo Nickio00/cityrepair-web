@@ -131,4 +131,10 @@ document.addEventListener("DOMContentLoaded", () => {
       isSubmitting = false;
     }
   });
+
+  // Olvidé mi contraseña → abrir modal
+  document.getElementById("forgotPassLink")?.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("modalForgot").style.display = "flex";
+  });
 });
